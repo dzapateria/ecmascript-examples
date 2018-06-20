@@ -2,6 +2,7 @@
 # Recursos de JS ECMAScript y TypeScript
 
 ## Listados de inspiración
+
 * <http://jstherightway.org/es-es/>
 * <https://github.com/sorrycc/awesome-javascript>
 * <https://github.com/ericdouglas/ES6-Learning>
@@ -10,57 +11,60 @@
 * http://es6-features.org/
 
 ## TEMAS FUNDAMENTALES
-* Introducción a JavaScript
-    * La consola del navegador
-    * Incluir js en en el html
-    * Comentarios
-    * Tipos de datos
-    * Primitive Datatypes, valor y referencia
-    * type Conversion
-    * Variables - var, let & const
-    * Operadores
-    * Funciones y ámbitos de las variables
-    * Salida con console.log
-* Control de flujo y ciclos (Control Flow and Loops)
-    * Debugger in chrome
-    * Directiva de control If y Else
-    * Directiva Each
-    * Directiva de control While
-    * Directiva de control For
-* Funciones (Functions)
-    * Definición de una función.
-    * Parámetros
-    * Parámetros por defecto
-    * Funciones Flecha (Arrow Function)
-    * Callback
-    * Retorno
-    * El contexto de JavaScript y el objeto this
-    * setTimeOut
-* Arrays métodos
-* OOP Prototipos y herencia
-    
-* DOM
-    * Selección de elementos HTML por etiqueta, clase o id.
-    * Manipulación y recorrido del DOM. Alterando la estructura HTML de un documento
-    * Eventos del documento, del navegador y del usuario. Interacción del usuario con la página web
 
-## HERRAMIENTAS PARA APRENDIZAJE
+* Introducción a JavaScript
+  * La consola del navegador
+  * Incluir js en en el html
+  * Comentarios
+  * Tipos de datos
+  * Primitive Datatypes, valor y referencia
+  * type Conversion
+  * Variables - var, let & const
+  * Operadores
+  * Funciones y ámbitos de las variables
+  * Salida con console.log
+  * Control de flujo y ciclos (Control Flow and Loops)
+  * Debugger in chrome
+  * Directiva de control If y Else
+  * Directiva Each
+  * Directiva de control While
+  * Directiva de control For
+  * Funciones (Functions)
+  * Definición de una función.
+  * Parámetros
+  * Parámetros por defecto
+  * Funciones Flecha (Arrow Function)
+  * Callback
+  * Retorno
+  * El contexto de JavaScript y el objeto this
+  * setTimeOut
+  * Arrays métodos
+  * OOP Prototipos y herencia  
+
+* DOM
+  * Selección de elementos HTML por etiqueta, clase o id.
+  * Manipulación y recorrido del DOM. Alterando la estructura HTML de un documento
+  * Eventos del documento, del navegador y del usuario. Interacción del usuario con la página web
+
+##HERRAMIENTAS PARA APRENDIZAJE
 * Chrome Dev tools (console)
 * Chrome Dev tools Debugger and Breakpoints 
 * Playgrounds: codepen, fiddle
 * http://www.objectplayground.com/
 
-## VIDEO COURSES PREIMUM IN ENGLISH
-
+##VIDEO COURSES PREIMUM IN ENGLISH
 * JavaScript Essential Training - Linkedin
 * Learning ECMAScript 6
 * JavaScript Enhancing the DOM
 * JavaScript: Events
 * Linkedin Spanish Authors
-    * JavaScript Esencial - Sergio Brito [codes](./01)
+    * Sergio Brito
+        * JavaScript Esencial [codes](./01)
+        * Novedades JavaScript versión ES6
+        * JavasScript Buenas Prácticas
+        * JavaScript avanzado Expresiones Regulares
+        * Typescript 2 esencial
     * Programación orientada a objetos con JavaScript - Carlos Gonzalez Sancho
-    * Typescript 2 esencial - Sergio Brito
-    * JavaScript avanzado Expresiones Regulares - Sergio Brito
 * Linkedin English Authors
     * Isotope.js: Advanced Filtering (Morten Rand-Hendriksen)
     * Learning App Building with Vanilla JavaScript (Sasha Vodnik)
