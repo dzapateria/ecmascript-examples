@@ -45,9 +45,10 @@
     * Eventos del documento, del navegador y del usuario. Interacción del usuario con la página web
 
 ## HERRAMIENTAS PARA APRENDIZAJE
-* Chrome Dev tools (Watch)
+* Chrome Dev tools (console)
+* Chrome Dev tools Debugger and Breakpoints 
 * Playgrounds: codepen, fiddle
-
+* http://www.objectplayground.com/
 
 ## VIDEO COURSES PREIMUM IN ENGLISH
 
@@ -56,8 +57,10 @@
 * JavaScript Enhancing the DOM
 * JavaScript: Events
 * Linkedin Spanish Authors
-    * JavaScript Esencial 
-    * Programación orientada a objetos con JavaScript - (Carlos Gonzalez Sancho)
+    * JavaScript Esencial - Sergio Brito [codes](./01)
+    * Programación orientada a objetos con JavaScript - Carlos Gonzalez Sancho
+    * Typescript 2 esencial - Sergio Brito
+    * JavaScript avanzado Expresiones Regulares - Sergio Brito
 * Linkedin English Authors
     * Isotope.js: Advanced Filtering (Morten Rand-Hendriksen)
     * Learning App Building with Vanilla JavaScript (Sasha Vodnik)
@@ -75,7 +78,6 @@
     * JavaScript Best Practices (Jonathan Mills)
     * [JavaScript Fundamentals for ES6](http://www.pluralsight.com/courses/javascript-fundamentals-es6)
     * Rapid ES6 Training
-    * Gary 
 * Kent C. Dodds
     * Creating an Open Source JavaScript Library - Linkedin
         * [Reference for course](https://github.com/sarbbottam/write-an-open-source-js-lib)
