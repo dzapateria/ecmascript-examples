@@ -8,7 +8,7 @@
 * <https://github.com/ericdouglas/ES6-Learning>
 * <https://github.com/vuejs/awesome-vue>
 * <https://jsbooks.revolunet.com/>
-* http://es6-features.org/
+* <http://es6-features.org/>
 
 ## TEMAS FUNDAMENTALES
 
@@ -40,42 +40,43 @@
   * setTimeOut
   * Arrays métodos
   * OOP Prototipos y herencia  
-
 * DOM
   * Selección de elementos HTML por etiqueta, clase o id.
   * Manipulación y recorrido del DOM. Alterando la estructura HTML de un documento
   * Eventos del documento, del navegador y del usuario. Interacción del usuario con la página web
 
-##HERRAMIENTAS PARA APRENDIZAJE
+## HERRAMIENTAS PARA APRENDIZAJE
+
 * Chrome Dev tools (console)
 * Chrome Dev tools Debugger and Breakpoints 
 * Playgrounds: codepen, fiddle
 * http://www.objectplayground.com/
 
-##VIDEO COURSES PREIMUM IN ENGLISH
+## VIDEO COURSES PREMIUM IN ENGLISH
+
 * JavaScript Essential Training - Linkedin
 * Learning ECMAScript 6
 * JavaScript Enhancing the DOM
 * JavaScript: Events
 * Linkedin Spanish Authors
-    * Sergio Brito
-        * JavaScript Esencial [codes](./01)
-        * Novedades JavaScript versión ES6
-        * JavasScript Buenas Prácticas
-        * JavaScript avanzado Expresiones Regulares
-        * Typescript 2 esencial
-    * Programación orientada a objetos con JavaScript - Carlos Gonzalez Sancho
+  * Programación orientada a objetos con JavaScript - Carlos Gonzalez Sancho
+  * Sergio Brito
+  * JavaScript Esencial [codes](./01)
+  * Novedades JavaScript versión ES6
+  * JavasScript Buenas Prácticas
+  * JavaScript avanzado Expresiones Regulares
+  * Typescript 2 esencial
 * Linkedin English Authors
-    * Isotope.js: Advanced Filtering (Morten Rand-Hendriksen)
-    * Learning App Building with Vanilla JavaScript (Sasha Vodnik)
-    * Learning JavaScript Debugging (Joe Chellman)
-    * Learning Functional Programming with JavaScript (Shaun Wassell)
-    * JavaScript: Prototypes (Sasha Vodnik)
-    * Learning ECMAScript 6 (Eve Porcello)
-    * JavaScript Functions (Ray Villalobos)
-    * JavaScript and JSON: Integration Techniques (Ray Villalobos)
-    * Vanilla JavaScript: Binding and Propagation (Leigh Lawhon)
-    * TypeScript Essential Training (Jess Chadwick)
+  * Isotope.js: Advanced Filtering (Morten Rand-Hendriksen)
+  * Learning App Building with Vanilla JavaScript (Sasha Vodnik)
+  * Learning JavaScript Debugging (Joe Chellman)
+  * Learning Functional Programming with JavaScript (Shaun Wassell)
+  * JavaScript: Prototypes (Sasha Vodnik)
+  * Learning ECMAScript 6 (Eve Porcello)
+  * JavaScript Functions (Ray Villalobos)
+  * JavaScript and JSON: Integration Techniques (Ray Villalobos)
+  * Vanilla JavaScript: Binding and Propagation (Leigh Lawhon)
+  * TypeScript Essential Training (Jess Chadwick)
 * Pluralsight Authors
     * Quick Start to JavaScript (Susan Simkins)
     * Practical Design Patterns in JavaScript (Jonathan Mills)
@@ -171,7 +172,8 @@
     * Principles of Object-Oriented Programming in JavaScript (Leanpub) - 2014 - 93p
     * computer-science-in-javascript [repo](https://github.com/nzakas/computer-science-in-javascript)
     * [Posts Tagged ECMAScript 6 in nczonline.net](https://www.nczonline.net/blog/tag/ecmascript-6/)
-    
+* Eric Elliot 
+  * Programming JavaScript Applications [souce code github](https://github.com/oreillymedia/programming_javascript_applications)
 
 ## Books Spanish
 * ¡Inspírate! (150p) - Leanpub - Ulises Gascón González
@@ -179,11 +181,8 @@
 * [Introducción a Javascript 'Javier Eguiluz'](http://librosweb.es/libro/javascript/)
 * [El jardín de JavaScript online](http://bonsaiden.github.io/JavaScript-Garden/es/)
 
-
-
-
 ## SITIOS DE VIDEO CURSOS EN ESPAÑOL PREMIUM
-* **Linkedin** Learning España (Antes Video2Brain)
+* Learning España (Antes Video2Brain)
 * Acamica
 * devcode
 * keepcoding
@@ -212,7 +211,6 @@
 * Frontend Masters
 * egghead.io
 * tutsplus
-    * 
 * Skillshare
 * Packtpub Mapt
 * vueschool.io 3 free courses (VOSE)
@@ -248,10 +246,7 @@
 * [FreeCodeCampBA/intro-js](https://github.com/FreeCodeCampBA/intro-js)
 * [Introducción a JavaScript - Nicolás Quiroz - @acamica @FreeCodeCamp BA](https://github.com/nhsz/intro-js)
 
-
-
 ## TUTS INGLÉS
-
 * Ilya Kantor [javascript.info](javascript.info)
 * <https://github.com/juanmaguitar/javascript-notes>
 * <https://www.w3schools.com/js/default.asp>
@@ -269,7 +264,7 @@
 
 
 ## TUTS INGLÉS ADVANCED
-[Learning Advanced JavaScript por John Resig - online](https://johnresig.com/apps/learn/)
+* [Learning Advanced JavaScript por John Resig - online](https://johnresig.com/apps/learn/)
 
 ## STYLE GUIDES
 * https://github.com/airbnb/javascript
@@ -309,17 +304,10 @@
 * The JavaScript Tutorial <https://javascript.info>
 
 ## TESTING
-- <https://github.com/rmurphey/js-assessment>
+* <https://github.com/rmurphey/js-assessment>
 
 ## Project Based
 
 * <https://javascript30.com> with Closed Captions - Wes Bos - Free Online
-
-
-
-
-
-
-
 
 [1]: https://developer.mozilla.org/es/docs/Web/JavaScript/Introducci%C3%B3n_a_JavaScript_orientado_a_objetos?redirectlocale=en-US&redirectslug=JavaScript%2FIntroduction_to_Object-Oriented_JavaScript

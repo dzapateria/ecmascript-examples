@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>readme.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="recursos-de-js-ecmascript-y-typescript">Recursos de JS ECMAScript y TypeScript</h1>
+<h2 id="listados-de-inspiraci%C3%B3n">Listados de inspiración</h2>
+<ul>
+<li><a href="http://jstherightway.org/es-es/">http://jstherightway.org/es-es/</a></li>
+<li><a href="https://github.com/sorrycc/awesome-javascript">https://github.com/sorrycc/awesome-javascript</a></li>
+<li><a href="https://github.com/ericdouglas/ES6-Learning">https://github.com/ericdouglas/ES6-Learning</a></li>
+<li><a href="https://github.com/vuejs/awesome-vue">https://github.com/vuejs/awesome-vue</a></li>
+<li><a href="https://jsbooks.revolunet.com/">https://jsbooks.revolunet.com/</a></li>
+<li><a href="http://es6-features.org/">http://es6-features.org/</a></li>
+</ul>
+<h2 id="temas-fundamentales">TEMAS FUNDAMENTALES</h2>
+<ul>
+<li>
+<p>Introducción a JavaScript</p>
+<ul>
+<li>La consola del navegador</li>
+<li>Incluir js en en el html</li>
+<li>Comentarios</li>
+<li>Tipos de datos</li>
+<li>Primitive Datatypes, valor y referencia</li>
+<li>type Conversion</li>
+<li>Variables - var, let &amp; const</li>
+<li>Operadores</li>
+<li>Funciones y ámbitos de las variables</li>
+<li>Salida con console.log</li>
+<li>Control de flujo y ciclos (Control Flow and Loops)</li>
+<li>Debugger in chrome</li>
+<li>Directiva de control If y Else</li>
+<li>Directiva Each</li>
+<li>Directiva de control While</li>
+<li>Directiva de control For</li>
+<li>Funciones (Functions)</li>
+<li>Definición de una función.</li>
+<li>Parámetros</li>
+<li>Parámetros por defecto</li>
+<li>Funciones Flecha (Arrow Function)</li>
+<li>Callback</li>
+<li>Retorno</li>
+<li>El contexto de JavaScript y el objeto this</li>
+<li>setTimeOut</li>
+<li>Arrays métodos</li>
+<li>OOP Prototipos y herencia</li>
+</ul>
+</li>
+<li>
+<p>DOM</p>
+<ul>
+<li>Selección de elementos HTML por etiqueta, clase o id.</li>
+<li>Manipulación y recorrido del DOM. Alterando la estructura HTML de un documento</li>
+<li>Eventos del documento, del navegador y del usuario. Interacción del usuario con la página web</li>
+</ul>
+</li>
+</ul>
+<h2 id="herramientas-para-aprendizaje">HERRAMIENTAS PARA APRENDIZAJE</h2>
+<ul>
+<li>Chrome Dev tools (console)</li>
+<li>Chrome Dev tools Debugger and Breakpoints</li>
+<li>Playgrounds: codepen, fiddle</li>
+<li>http://www.objectplayground.com/</li>
+</ul>
+<h2 id="video-courses-preimum-in-english">VIDEO COURSES PREIMUM IN ENGLISH</h2>
+<ul>
+<li>JavaScript Essential Training - Linkedin</li>
+<li>Learning ECMAScript 6</li>
+<li>JavaScript Enhancing the DOM</li>
+<li>JavaScript: Events</li>
+<li>Linkedin Spanish Authors
+<ul>
+<li>Programación orientada a objetos con JavaScript - Carlos Gonzalez Sancho</li>
+<li>Sergio Brito
+<ul>
+<li>JavaScript Esencial <a href="./01">codes</a></li>
+<li>Novedades JavaScript versión ES6</li>
+<li>JavasScript Buenas Prácticas</li>
+<li>JavaScript avanzado Expresiones Regulares</li>
+<li>Typescript 2 esencial</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Linkedin English Authors
+<ul>
+<li>Isotope.js: Advanced Filtering (Morten Rand-Hendriksen)</li>
+<li>Learning App Building with Vanilla JavaScript (Sasha Vodnik)</li>
+<li>Learning JavaScript Debugging (Joe Chellman)</li>
+<li>Learning Functional Programming with JavaScript (Shaun Wassell)</li>
+<li>JavaScript: Prototypes (Sasha Vodnik)</li>
+<li>Learning ECMAScript 6 (Eve Porcello)</li>
+<li>JavaScript Functions (Ray Villalobos)</li>
+<li>JavaScript and JSON: Integration Techniques (Ray Villalobos)</li>
+<li>Vanilla JavaScript: Binding and Propagation (Leigh Lawhon)</li>
+<li>TypeScript Essential Training (Jess Chadwick)</li>
+</ul>
+</li>
+<li>Pluralsight Authors
+<ul>
+<li>Quick Start to JavaScript (Susan Simkins)</li>
+<li>Practical Design Patterns in JavaScript (Jonathan Mills)</li>
+<li>JavaScript Best Practices (Jonathan Mills)</li>
+<li><a href="http://www.pluralsight.com/courses/javascript-fundamentals-es6">JavaScript Fundamentals for ES6</a></li>
+<li>Rapid ES6 Training</li>
+</ul>
+</li>
+<li>Kent C. Dodds
+<ul>
+<li>Creating an Open Source JavaScript Library - Linkedin
+<ul>
+<li><a href="https://github.com/sarbbottam/write-an-open-source-js-lib">Reference for course</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Brian Holt <a href="https://codepen.io/btholt/">(codepen)</a>
+<ul>
+<li>Four Semesters of Computer Science in 5 Hours - Brian Holt - Linkedin</li>
+</ul>
+</li>
+<li>Douglas Crockford
+<ul>
+<li>The Good Parts of JavaScript and the Web - Douglas Crockford - Linkedin</li>
+<li>JavaScript: The Good Parts - Book</li>
+</ul>
+</li>
+<li>Kyle Simpson
+<ul>
+<li>Functional-Lite JavaScript</li>
+<li>Organizing JavaScript Functionality</li>
+<li>Rethinking Asynchronous JavaScript</li>
+<li>ES6: The Right Parts</li>
+<li>Coercion in JavaScript</li>
+<li><a href="https://github.com/getify/You-Dont-Know-JS/">You Dont Know JS Series</a> Books</li>
+<li><a href="https://davidwalsh.name/javascript-objects">JS Object Series in davidwalsh.name (articles)</a></li>
+</ul>
+</li>
+<li>Wes Bos
+<ul>
+<li>ES6 For Everyone <a href="https://es6.io/">https://es6.io/</a></li>
+</ul>
+</li>
+<li>Packtpub Mapt
+<ul>
+<li>Programming with ECMAScript 2015 (Video Course) by Lohith G. N. (April 2017)</li>
+</ul>
+</li>
+<li>Udemy English
+<ul>
+<li>Brad Traversy
+<ul>
+<li>Modern JavaScript From The Beginning</li>
+</ul>
+</li>
+<li>Andrew Mead
+<ul>
+<li><a href="https://www.udemy.com/modern-javascript/">The Modern JavaScript Bootcamp (2018)</a></li>
+</ul>
+</li>
+<li>Jonas Schmedtmann
+<ul>
+<li>The Complete JavaScript Course 2018: Build Real Projects!</li>
+</ul>
+</li>
+<li>Laurence Svekis
+<ul>
+<li><a href="https://www.udemy.com/javascript-training/">The Complete JavaScript Course - Beginner to Professional</a></li>
+</ul>
+</li>
+<li>Colt Steele - (<a href="http://webdev.slides.com/coltsteele/)">http://webdev.slides.com/coltsteele/)</a>
+<ul>
+<li><a href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Bootcamp</a></li>
+<li>The Advanced Web Developer Bootcamp</li>
+</ul>
+</li>
+<li>Mosh Mamedani - Object-oriented Programming in JavaScript</li>
+<li>Maximilian Schwarzmüller
+<ul>
+<li><a href="https://www.udemy.com/javascript-bootcamp-2016/">Accelerated JavaScript Training</a></li>
+<li><a href="https://www.udemy.com/es6-bootcamp-next-generation-javascript/">Accelerated ES6 JavaScript Training</a></li>
+<li><a href="https://www.udemy.com/understanding-typescript/">Understanding TypeScript</a></li>
+</ul>
+</li>
+<li><a href="https://www.udemy.com/typescript-design-patterns/">TypeScript Design Patterns - Xavier Decuyper</a></li>
+<li>Stephen Grider
+<ul>
+<li>ES6 Javascript: The Complete Developer's Guide</li>
+</ul>
+</li>
+<li>Anthony Alicea - JavaScript: Understanding the Weird Parts</li>
+</ul>
+</li>
+<li>Udemy Spanish
+<ul>
+<li>Francisco Javier Arce Anguiano
+<ul>
+<li><a href="https://www.udemy.com/fundamentos-de-programacion-con-javascript/">Aprende Javascript, HTML5 y CSS3</a></li>
+<li><a href="https://www.udemy.com/programacion-orientada-a-objetos-con-javascript/">Programación orientada a objetos con JavaScript</a></li>
+<li><a href="https://www.udemy.com/es6-javascript/">JavaScript ES6</a></li>
+<li>Domina el DOM con JavaScript</li>
+</ul>
+</li>
+<li>Javier Muñiz
+<ul>
+<li><a href="https://www.udemy.com/programa-tus-primeros-juegos-html5-con-javascript/learn/v4/">Programa tus Primeros Juegos HTML5 con javaScript</a></li>
+</ul>
+</li>
+<li>Fernando Herrera
+<ul>
+<li><a href="https://www.udemy.com/javascript-de-cero-hasta-los-detalles/">JavaScript: de cero hasta los detalles</a></li>
+<li><a href="https://www.udemy.com/ecmascript-6-es2015/">JavaScript: ECMAScript 6 y todos sus detalles</a></li>
+<li><a href="https://www.udemy.com/jquery-de-cero-a-avanzado-mediante-ejercicios-practicos/">jQuery: De cero a avanzado mediante ejercicios prácticos.</a></li>
+<li><a href="https://www.udemy.com/jquery-avanzado-100-trucos-profesionales/">jQuery Avanzado - 100 trucos profesionales</a></li>
+<li><a href="https://www.udemy.com/typescript-guia-completa/">TypeScript: tu completa guía y manual de mano.</a></li>
+<li><a href="https://www.udemy.com/recursos-web-plugins-y-utilidades/">60+ Herramientas de desarrollo y diseño web</a></li>
+<li><a href="https://www.udemy.com/node-de-cero-a-experto/">Node de Cero a experto</a></li>
+</ul>
+</li>
+<li>Juan Pablo De la torre Valdez
+<ul>
+<li><a href="https://www.udemy.com/javascript-moderno-guia-definitiva-construye-10-proyectos/">JavaScript Moderno Guía Definitiva Construye +10 Proyectos</a></li>
+</ul>
+</li>
+<li>Victor Robles
+<ul>
+<li>Master de JavaScript</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Skillshare
+<ul>
+<li>Zsolt Nagy - JavaScript - ES6 in Practice - Level 1 - Fundamentals</li>
+<li>Zsolt Nagy - JavaScript - ES6 in Practice - Level 2 - Classes, Objects, Functions</li>
+</ul>
+</li>
+</ul>
+<h2 id="books-english-authors">Books English Authors</h2>
+<ul>
+<li><a href="https://leanpub.com/u/juanmanuelgarrido">Eloquent Javascript - online</a></li>
+<li>A Smarter Way to Learn JavaScript By Mark Myes</li>
+<li>The JavaScript Way - Baptiste Pesquet</li>
+<li>Stoyan Stefanov
+<ul>
+<li>JavaScript Patterns</li>
+<li>Object-Oriented JavaScript</li>
+</ul>
+</li>
+<li>Jon Duckett
+<ul>
+<li>Web Design with HTML, CSS, JavaScript and jQuery</li>
+</ul>
+</li>
+<li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">Addy Osmani - Learning JavaScript Design Patterns - Online</a></li>
+<li>Cody Lindley
+<ul>
+<li>JavaScript Succinctly - 130p</li>
+<li>jQuery Succinctly</li>
+</ul>
+</li>
+<li>David Herman - Effective JavaScript</li>
+<li>Reg “raganwald” Braithwaite - JavaScript Allongé</li>
+<li>Axel Rauschmayer <a href="http://2ality.com/">http://2ality.com/</a>
+<ul>
+<li>Speaking JavaScript</li>
+<li>Exploring ES6, ES2016 and ES2017, ES2018 and ES2019</li>
+<li>Setting up ES6</li>
+</ul>
+</li>
+<li>Nicholas C. Zakas <a href="https://github.com/nzakas">github</a>
+<ul>
+<li>Understanding ECMAScript 6 - 322p - <a href="https://leanpub.com/understandinges6/read">read online</a> <a href="https://github.com/nzakas/understandinges6">repo</a></li>
+<li>Principles of Object-Oriented Programming in JavaScript (Leanpub) - 2014 - 93p</li>
+<li>computer-science-in-javascript <a href="https://github.com/nzakas/computer-science-in-javascript">repo</a></li>
+<li><a href="https://www.nczonline.net/blog/tag/ecmascript-6/">Posts Tagged ECMAScript 6 in nczonline.net</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="books-spanish">Books Spanish</h2>
+<ul>
+<li>¡Inspírate! (150p) - Leanpub - Ulises Gascón González</li>
+<li>Apuntes de Javascript II, III - Juan Manuel Garrido</li>
+<li><a href="http://librosweb.es/libro/javascript/">Introducción a Javascript 'Javier Eguiluz'</a></li>
+<li><a href="http://bonsaiden.github.io/JavaScript-Garden/es/">El jardín de JavaScript online</a></li>
+</ul>
+<h2 id="sitios-de-video-cursos-en-espa%C3%B1ol-premium">SITIOS DE VIDEO CURSOS EN ESPAÑOL PREMIUM</h2>
+<ul>
+<li><strong>Linkedin</strong> Learning España (Antes Video2Brain)</li>
+<li>Acamica</li>
+<li>devcode</li>
+<li>keepcoding</li>
+<li>openclassrooms</li>
+<li>codigofacilito</li>
+<li>geekshubacademy</li>
+<li>webtraining.zone</li>
+<li>Streaming
+<ul>
+<li>openwebinars</li>
+<li>escuelait</li>
+<li>platzi</li>
+<li>edteam</li>
+<li>educacionit</li>
+</ul>
+</li>
+</ul>
+<h2 id="videos-en-espa%C3%B1ol-gratuitos">VIDEOS EN ESPAÑOL GRATUITOS</h2>
+<ul>
+<li>Mirandax</li>
+<li>Youtube
+<ul>
+<li>Juan Andrés Nuñez - JavaScript Esencial</li>
+<li>The Coding Train - <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA">1-7: Foundations of Programming in JavaScript - p5.js Tutorial</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="videos-cursos-ingl%C3%A9s-premium">VIDEOS CURSOS INGLÉS PREMIUM</h2>
+<ul>
+<li>Linkedin Learning (Antes Lynda)</li>
+<li>Teamtreehouse</li>
+<li>codeschool</li>
+<li>Pluralsight</li>
+<li>Frontend Masters</li>
+<li>egghead.io</li>
+<li>tutsplus</li>
+<li>Skillshare</li>
+<li>Packtpub Mapt</li>
+<li>vueschool.io 3 free courses (VOSE)</li>
+</ul>
+<h2 id="sitios-de-video-cursos-gratuitos">SITIOS DE VIDEO CURSOS GRATUITOS</h2>
+<ul>
+<li>Udacity
+<ul>
+<li>ES6: JavaScript Improved - Udacity</li>
+</ul>
+</li>
+<li>Khanacademy</li>
+<li>Coursera</li>
+<li>EDX</li>
+<li>Youtube
+<ul>
+<li>DesignCourse (Gary Simons)
+<ul>
+<li><a href="https://youtu.be/78tNYZUS-ps">The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="bootcamps-en-espa%C3%B1ol">Bootcamps en Español</h2>
+<ul>
+<li><a href="http://www.skylabcoders.com">http://www.skylabcoders.com</a> (JuanMa Garrido, David Monreal 'InfoJobs-Schibsted')</li>
+<li>Keepcoding</li>
+<li><a href="https://www.neoland.es/full-stack-bootcamp/">https://www.neoland.es/full-stack-bootcamp/</a> - 6500€</li>
+<li>Ironhack</li>
+<li>lemoncoders (Master en Frontend)</li>
+<li>cice.es <a href="https://www.cice.es/master-desarrollo-web-full-stack/">https://www.cice.es/master-desarrollo-web-full-stack/</a></li>
+</ul>
+<h2 id="bootcamps-en-ingl%C3%A9s">Bootcamps en Inglés</h2>
+<ul>
+<li><a href="https://generalassemb.ly">https://generalassemb.ly</a> Colt Steele</li>
+</ul>
+<h2 id="tutoriales-espa%C3%B1ol">TUTORIALES ESPAÑOL</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics">Fundamentos de JavaScript - MDN</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Una_re-introducci%C3%B3n_a_JavaScript">Una re-introducción a JavaScript (Tutorial de JS) - MDN</a></li>
+<li><a href="1">Introducción a JavaScript orientado a objetos - MDN</a></li>
+<li><a href="https://jsparagatos.com/">JavaScript para Gatos</a></li>
+<li><a href="https://github.com/FreeCodeCampBA/intro-js">FreeCodeCampBA/intro-js</a></li>
+<li><a href="https://github.com/nhsz/intro-js">Introducción a JavaScript - Nicolás Quiroz - @acamica @FreeCodeCamp BA</a></li>
+</ul>
+<h2 id="tuts-ingl%C3%A9s">TUTS INGLÉS</h2>
+<ul>
+<li>Ilya Kantor <a href="javascript.info">javascript.info</a></li>
+<li><a href="https://github.com/juanmaguitar/javascript-notes">https://github.com/juanmaguitar/javascript-notes</a></li>
+<li><a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a></li>
+<li><a href="http://hsablonniere.github.io/markleft/prezas/javascript-101.html#1.0">http://hsablonniere.github.io/markleft/prezas/javascript-101.html#1.0</a></li>
+<li><a href="https://github.com/maxogden/art-of-node#the-art-of-node">https://github.com/maxogden/art-of-node#the-art-of-node</a></li>
+<li>http://perfectionkills.com/</li>
+<li>https://blog.sessionstack.com/tagged/tutorial</li>
+<li>https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/</li>
+<li>https://yehudakatz.com/2011/08/12/understanding-prototypes-in-javascript/</li>
+<li>ES2015
+<ul>
+<li>https://github.com/ericdouglas/ES6-Learning</li>
+<li><a href="https://medium.com/ecmascript-2015">https://medium.com/ecmascript-2015</a> by Maciej Rzepinski</li>
+<li><a href="https://github.com/lukehoban/es6features">https://github.com/lukehoban/es6features</a></li>
+<li>https://github.com/DrkSephy/es6-cheatsheet</li>
+</ul>
+</li>
+</ul>
+<h2 id="tuts-ingl%C3%A9s-advanced">TUTS INGLÉS ADVANCED</h2>
+<ul>
+<li><a href="https://johnresig.com/apps/learn/">Learning Advanced JavaScript por John Resig - online</a></li>
+</ul>
+<h2 id="style-guides">STYLE GUIDES</h2>
+<ul>
+<li>https://github.com/airbnb/javascript</li>
+<li>JS Style Guide, linter &amp; code fixer - <a href="https://github.com/standard/standard">https://github.com/standard/standard</a></li>
+<li><a href="https://google.github.io/styleguide/javascriptguide.xml">https://google.github.io/styleguide/javascriptguide.xml</a></li>
+<li>https://github.com/rwaldron/idiomatic.js</li>
+</ul>
+<h2 id="otros-enlaces-de-inter%C3%A9s">OTROS ENLACES DE INTERÉS</h2>
+<ul>
+<li><a href="https://dev.opera.com/articles/javascript-best-practices/">https://dev.opera.com/articles/javascript-best-practices/</a></li>
+</ul>
+<h2 id="sitios-pr%C3%A1ticos-en-espa%C3%B1ol">SITIOS PRÁTICOS EN ESPAÑOL</h2>
+<ul>
+<li><a href="https://freecodecamp.com/">https://freecodecamp.com/</a></li>
+<li>sololearn</li>
+<li>mumuki</li>
+<li>codeacademy</li>
+<li>https://www.codeavengers.com</li>
+</ul>
+<h2 id="sitios-pr%C3%A1cticos-en-ingl%C3%A9s">SITIOS PRÁCTICOS EN INGLÉS</h2>
+<ul>
+<li>nodeschool.io</li>
+<li>codeacademy</li>
+</ul>
+<h2 id="refencias-en-espa%C3%B1ol">REFENCIAS EN ESPAÑOL</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide">Guía de JavaScript (MDN)</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia">Referencia de JavaScript (MDN)</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript (MDN)</a></li>
+<li><a href="https://www.todojs.com/ref/javascript">https://www.todojs.com/ref/javascript</a> (Referencia 5.1 Español)</li>
+<li><a href="https://msdn.microsoft.com/es-es/library/d1et7k7c(v=vs.94).aspx">Referencia del lenguaje JavaScript - MSDN Español</a></li>
+<li><a href="http://jstherightway.org/es-es/">http://jstherightway.org/es-es/</a></li>
+</ul>
+<h2 id="references">REFERENCES</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript Guide (MDN)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript reference (MDN)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript (MDN)</a></li>
+<li><a href="https://jargon.js.org/">https://jargon.js.org/</a> - <a href="https://github.com/HugoGiraudel/SJSJ">https://github.com/HugoGiraudel/SJSJ</a></li>
+<li>The JavaScript Tutorial <a href="https://javascript.info">https://javascript.info</a></li>
+</ul>
+<h2 id="testing">TESTING</h2>
+<ul>
+<li><a href="https://github.com/rmurphey/js-assessment">https://github.com/rmurphey/js-assessment</a></li>
+</ul>
+<h2 id="project-based">Project Based</h2>
+<ul>
+<li><a href="https://javascript30.com">https://javascript30.com</a> with Closed Captions - Wes Bos - Free Online</li>
+</ul>
+
+</body>
+</html>
